@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns:1200px 320px;
+    width:1200px;
+}
+.container #box1{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* padding-left: 15px; */
+    top: 0px;
+}
+.container #box2,#box3{
+    padding: 20px;
+}
+.container #box4{
+    padding:20px;
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
